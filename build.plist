@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>SFTPKit</string>
+	<key>build</key>
+	<dict>
+		<key>buildSystem</key>
+		<string>xcode</string>
+		<key>buildArgs</key>
+		<array>
+			<string>-project</string>
+			<string>SFTPKit.xcodeproj</string>
+			<string>-target</string>
+			<string>SFTPKit</string>
+		</array>
+		<key>outputs</key>
+		<array>
+			<string>SFTPKit.framework</string>
+		</array>
+	</dict>
+	<key>dependencies</key>
+	<array>
+		<dict>
+			<key>type</key>
+			<string>github</string>
+			<key>path</key>
+			<string>IMcD23/ConnectionKit</string>
+			<key>branch</key>
+			<string>master</string>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>local</string>
+			<key>path</key>
+			<string>ThirdParty/NMSSH</string>
+		</dict>
+	</array>
+</dict>
+</plist>

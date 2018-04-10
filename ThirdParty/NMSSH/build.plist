@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>NMSSH</string>
+	<key>build</key>
+	<dict>
+		<key>location</key>
+		<dict>
+			<key>type</key>
+			<string>github</string>
+			<key>path</key>
+			<string>NMSSH/NMSSH</string>
+			<key>branch</key>
+			<string>master</string>
+		</dict>
+		<key>buildSystem</key>
+		<string>xcode</string>
+		<key>buildArgs</key>
+		<array>
+			<string>-project</string>
+			<string>NMSSH-iOS.xcodeproj</string>
+			<string>-target</string>
+			<string>NMSSH</string>
+		</array>
+		<key>outputs</key>
+		<array>
+			<string>NMSSH.framework</string>
+		</array>
+	</dict>
+</dict>
+</plist>
