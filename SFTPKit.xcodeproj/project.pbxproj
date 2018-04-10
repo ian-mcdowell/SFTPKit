@@ -161,6 +161,7 @@
 				3CD00FDF207C6B67007621FF /* Frameworks */,
 				3CD00FE0207C6B67007621FF /* Headers */,
 				3CD00FE1207C6B67007621FF /* Resources */,
+				3C2E8379207C9DF300E7CF58 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,6 +248,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C2E8379207C9DF300E7CF58 /* Copy Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(IBUILD_CURRENT_BUILD_ROOT)/NMSSH.framework",
+			);
+			name = "Copy Frameworks";
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Frameworks/NMSSH.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -R $SCRIPT_INPUT_FILE_0 $SCRIPT_OUTPUT_FILE_0";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3CD00FDE207C6B67007621FF /* Sources */ = {
