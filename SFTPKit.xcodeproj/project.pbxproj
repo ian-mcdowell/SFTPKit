@@ -59,7 +59,7 @@
 		3CD01017207C7447007621FF /* ConnectionKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ConnectionKit.framework; path = ibuild/ConnectionKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CD01018207C7448007621FF /* NMSSH.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NMSSH.framework; path = ibuild/NMSSH.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CD0101E207C7468007621FF /* SFTPConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFTPConnection.swift; sourceTree = "<group>"; };
-		3CD01028207C8876007621FF /* ibuild_search_paths.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = ibuild_search_paths.xcconfig; path = ../../../../../usr/local/Cellar/ibuild/1.0.4/libexec/ibuild_search_paths.xcconfig; sourceTree = "<group>"; };
+		3CD01028207C8876007621FF /* ibuild_search_paths.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = ibuild_search_paths.xcconfig; path = /usr/local/opt/ibuild/libexec/ibuild_search_paths.xcconfig; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
