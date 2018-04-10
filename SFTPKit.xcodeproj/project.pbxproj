@@ -59,6 +59,7 @@
 		3CD01017207C7447007621FF /* ConnectionKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ConnectionKit.framework; path = ibuild/ConnectionKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CD01018207C7448007621FF /* NMSSH.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NMSSH.framework; path = ibuild/NMSSH.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CD0101E207C7468007621FF /* SFTPConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFTPConnection.swift; sourceTree = "<group>"; };
+		3CD01028207C8876007621FF /* ibuild_search_paths.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = ibuild_search_paths.xcconfig; path = ../../../../../usr/local/Cellar/ibuild/1.0.4/libexec/ibuild_search_paths.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +86,7 @@
 		3CD00FD9207C6B67007621FF = {
 			isa = PBXGroup;
 			children = (
+				3CD01028207C8876007621FF /* ibuild_search_paths.xcconfig */,
 				3CD01016207C743D007621FF /* Frameworks */,
 				3CD00FE5207C6B67007621FF /* Sources */,
 				3CD00FE4207C6B67007621FF /* Products */,
@@ -298,6 +300,7 @@
 /* Begin XCBuildConfiguration section */
 		3CD00FF5207C6B67007621FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CD01028207C8876007621FF /* ibuild_search_paths.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -361,6 +364,7 @@
 		};
 		3CD00FF6207C6B67007621FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CD01028207C8876007621FF /* ibuild_search_paths.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -426,7 +430,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(CONFIGURATION_BUILD_DIR)/ibuild";
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -437,7 +440,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.ianmcdowell.SFTPKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "$(CONFIGURATION_BUILD_DIR)/ibuild";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -454,7 +456,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(CONFIGURATION_BUILD_DIR)/ibuild";
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -465,7 +466,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.ianmcdowell.SFTPKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "$(CONFIGURATION_BUILD_DIR)/ibuild";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
