@@ -12,8 +12,6 @@
 		3CD00FF4207C6B67007621FF /* SFTPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CD00FE6207C6B67007621FF /* SFTPKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CD01019207C7448007621FF /* ConnectionKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD01017207C7447007621FF /* ConnectionKit.framework */; };
 		3CD0101A207C7448007621FF /* NMSSH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD01018207C7448007621FF /* NMSSH.framework */; };
-		3CD0101C207C745C007621FF /* ConnectionKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD01017207C7447007621FF /* ConnectionKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3CD0101D207C745C007621FF /* NMSSH.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD01018207C7448007621FF /* NMSSH.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3CD0101F207C7468007621FF /* SFTPConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD0101E207C7468007621FF /* SFTPConnection.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,21 +31,6 @@
 			remoteInfo = external;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		3CD0101B207C7455007621FF /* Copy Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				3CD0101C207C745C007621FF /* ConnectionKit.framework in Copy Frameworks */,
-				3CD0101D207C745C007621FF /* NMSSH.framework in Copy Frameworks */,
-			);
-			name = "Copy Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3CD00FE3207C6B67007621FF /* SFTPKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SFTPKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,6 +143,7 @@
 			buildPhases = (
 			);
 			buildToolPath = /usr/local/bin/ibuild;
+			buildWorkingDirectory = "$(SRCROOT)";
 			dependencies = (
 			);
 			name = external;
@@ -177,7 +161,6 @@
 				3CD00FDF207C6B67007621FF /* Frameworks */,
 				3CD00FE0207C6B67007621FF /* Headers */,
 				3CD00FE1207C6B67007621FF /* Resources */,
-				3CD0101B207C7455007621FF /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
