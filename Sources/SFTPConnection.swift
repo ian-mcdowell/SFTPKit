@@ -15,7 +15,7 @@ public class SFTPConnection: ServerConnection {
     public static let allowsCustomPort: Bool = true
 
     public required init(address: String, port: Int16, username: String, password: String) throws {
-
+        
     }
 
     public func contents(ofDirectory directory: RemotePath, _ completion: @escaping (Result<[RemoteItem]>) -> Void) {
