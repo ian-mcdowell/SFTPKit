@@ -10,10 +10,10 @@ import ConnectionKit
 import NMSSH
 
 public class SFTPConnection: ServerConnection {
-	public static let displayName: String = "SFTP"
-	public static let defaultPort: Int = 22
-	public static let allowsCustomPort: Bool = true
-	public static let bonjourServiceType: String = "_ssh._tcp"
+	public static var displayName: String { return "SFTP" }
+	public static var defaultPort: Int { return 22 }
+	public static var allowsCustomPort: Bool { return true }
+	public static var bonjourServiceType: String? { return "_ssh._tcp" }
 	
 	public required init(address: String, port: Int16, username: String, password: String) throws {
 		
